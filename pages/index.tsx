@@ -1,1 +1,5 @@
-export const API_DOCS = "12314"
+function index() {
+  return <div></div>
+}
+
+export default index
