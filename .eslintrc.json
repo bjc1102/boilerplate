@@ -1,3 +1,30 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prefer-const" : "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          // add a custom message to help explain why not to use it
+          // add a custom message, AND tell the plugin how to fix it
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
+          },
+          "{}": {
+            "message": "Use object instead",
+            "fixWith": "object"
+          }
+        }
+      }
+    ]
+  }
 }
