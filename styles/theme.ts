@@ -1,4 +1,10 @@
-import { DefaultTheme } from 'styled-components'
+import { css, DefaultTheme } from 'styled-components'
+
+export const flexCenter = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 export const darkTheme: DefaultTheme = {
   bgColor: '#2c3e50',

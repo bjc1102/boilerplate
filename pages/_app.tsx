@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { Theme } from '../styles/theme'
@@ -14,9 +13,7 @@ export default function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={Theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   )
