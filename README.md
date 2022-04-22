@@ -1,1 +1,1 @@
-Typescript + Eslint + styled-compontents
+Typescript + Eslint + styled-compontents + commitlint , husky
