@@ -4,7 +4,11 @@ import { name } from '../site.config'
 //BEM 방식 ( block , element , model )
 
 const index = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  return (
+    <main className="min-h-screen overflow-hidden">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </main>
+  )
 }
 
 export default index
